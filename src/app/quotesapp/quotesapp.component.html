@@ -7,22 +7,18 @@
                         <thead>
                         <tr>
                            
-                            <th></th>
-                            <th></th>
-                            <th></th>
-                            <th></th>
-                            <th></th>
-                            <th></th>
+                            <th>id</th>
+                            <th>quote</th>
+                            <th>author</th>
+                          
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
+                        <tr *ngFor="let i of data8.quotes">
+                            <td>{{i.id}}</td>
+                            <td>{{i.quote}}</td>
+                            <td>{{i.author}}</td>
+                         
                         </tr>
                     </tbody>
                </table>
