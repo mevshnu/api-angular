@@ -1,1 +1,42 @@
-<p>userdata works!</p>
+<app-nav></app-nav>
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl">
+            
+                    <table class="table">
+                        <thead>
+                        <tr>
+                           
+                            <th>id</th>
+                            <th>firstName</th>
+                            <th>lastName</th>
+                            <th>maidenName</th>
+                            <th>age</th>
+                            <th>gender</th>
+                            <th>email</th>
+                            <th>phone</th>
+                            <th>username</th>
+                            <th>password</th>
+                            <th>birthDate</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let i of data4.users">
+                            <td>{{i.id}}</td>
+                            <td>{{i.firstName}}</td>
+                            <td>{{i.lastName}}</td>
+                            <td>{{i.maidenName}}</td>
+                            <td>{{i.age}}</td>
+                            <td>{{i.gender}}</td>
+                            <td>{{i.email}}</td>
+                            <td>{{i.phone}}</td>
+                            <td>{{i.username}}</td>
+                            <td>{{i.password}}</td>
+                            <td>{{i.birthDate}}</td>
+                        </tr>
+                    </tbody>
+               </table>
+          
+        </div>
+    </div>
+</div>

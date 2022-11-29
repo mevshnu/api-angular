@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ApiService } from '../api.service';
 
 @Component({
   selector: 'app-userinfo',
@@ -7,4 +8,15 @@ import { Component } from '@angular/core';
 })
 export class UserinfoComponent {
 
+constructor(private api:ApiService)
+{
+  api.fetchuserinfo().subscribe(
+    (response)=>
+    {
+      this.data5=response;
+    }
+  )
+}
+
+data5:any={}
 }

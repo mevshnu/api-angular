@@ -1,1 +1,28 @@
-<p>quotesapp works!</p>
+<app-nav></app-nav>
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl">
+            
+                    <table class="table">
+                        <thead>
+                        <tr>
+                           
+                            <th>id</th>
+                            <th>quote</th>
+                            <th>author</th>
+                          
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let i of data8.quotes">
+                            <td>{{i.id}}</td>
+                            <td>{{i.quote}}</td>
+                            <td>{{i.author}}</td>
+                         
+                        </tr>
+                    </tbody>
+               </table>
+          
+        </div>
+    </div>
+</div>
