@@ -1,1 +1,29 @@
 <app-nav></app-nav>
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <div class="container">
+                <div class="row g-3 mt-4">
+                    <div class="col col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4" *ngFor="let i of data1.products" >
+
+                        <div class="card mb-3" >
+                            <img height="300px" src="{{i.thumbnail}}" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">{{i.title}}</h5>
+                              <p class="card-text">{{i.description}}</p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                              <li class="list-group-item">Price:{{i.price}}</li>
+                              <li class="list-group-item">Rating:{{i.rating}}</li>
+                              <li class="list-group-item">Brand:{{i.brand}}</li>
+                              
+                            </ul>
+                        
+                          </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
