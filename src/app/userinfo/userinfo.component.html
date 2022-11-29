@@ -1,2 +1,28 @@
 <app-nav></app-nav>
-<p>userinfo works!</p>
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <div class="container">
+                <div class="row g-3 mt-4">
+                    <div class="col col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3" *ngFor="let i of data5.data">
+
+                        <div class="card mb-3" >
+                            <img height="300px" src="{{i.avatar}}" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title" >id:{{i.id}}</h5>
+                              <p class="card-text">{{i.email}}</p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                              <li class="list-group-item">first_name:{{i.first_name}}</li>
+                              <li class="list-group-item">last_name:{{i.last_name}}</li>
+                          
+                            </ul>
+                           
+                          </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

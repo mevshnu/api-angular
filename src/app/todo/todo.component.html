@@ -7,22 +7,20 @@
                         <thead>
                         <tr>
                            
-                            <th></th>
-                            <th></th>
-                            <th></th>
-                            <th></th>
-                            <th></th>
-                            <th></th>
+                            <th>id</th>
+                            <th>todo</th>
+                            <th>completed</th>
+                            <th>userId</th>
+                           
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
+                        <tr *ngFor="let i of data6.todos">
+                            <td>{{i.id}}</td>
+                            <td>{{i.todo}}</td>
+                            <td>{{i.completed}}</td>
+                            <td>{{i.userId}}</td>
+                            
                         </tr>
                     </tbody>
                </table>
