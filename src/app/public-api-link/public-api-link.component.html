@@ -1,1 +1,29 @@
-<p>public-api-link works!</p>
+<app-nav></app-nav>
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <div class="container">
+                <div class="row g-3 mt-4">
+                    <div class="col col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3" *ngFor="let i of public.entries">
+
+                        <div class="card mb-3" >
+                            
+                            <div class="card-body">
+                              <h5 class="card-title">{{i.API}}</h5>
+                              <p class="card-text">{{i.Description}}</p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                              <li class="list-group-item">Category:{{i.Category}}</li>
+                            </ul>
+                            <div class="card-body">
+                              <a href="{{i.Link}}" class="card-link">View more</a>
+                             
+                            </div>
+                          </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
